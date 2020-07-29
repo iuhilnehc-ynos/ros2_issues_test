@@ -22,8 +22,6 @@ find_package(rclcpp_lifecycle REQUIRED)
 
 include_directories(
   include
-  ${std_msgs_INCLUDE_DIRS}
-  ${lifecycle_msgs_INCLUDE_DIRS}
   ${rclcpp_lifecycle_INCLUDE_DIRS}
   ${rclcpp_INCLUDE_DIRS})
 
