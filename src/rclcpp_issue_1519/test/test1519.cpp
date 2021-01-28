@@ -60,7 +60,7 @@ TEST_F(TestBug1519, test_resource_deadlock) {
     pubNode = std::make_shared<rclcpp::Node>("pub_node", options);
     stringPub = pubNode->create_publisher<std_msgs::msg::String>("/string", 1);
 
-    // if stringSub not reset, aborted happened at line 71
+    // if stringSub not reset, aborted happened at line 72
     // only while using `use_intra_process_comms(true)` to create node,
     // which means it's OK if using use_intra_process_comms(false).
     // stringSub.reset();
